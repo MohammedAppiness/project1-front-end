@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (min-width: 768px) {
+  section.dashboard .slick-list .slick-track {
+    display: flex;
   }
+  section.dashboard .slick-list .slide {
+    opacity: 1;
+  }
+  header .wrapper .article h1 span.arrow {
+    display:none;
+  }
+
+  header .wrapper .article .description {
+    max-height: 300px
+    
+  }
+} 
+
+@media only screen and (min-width: 1024px) {
+.App {
+  
+  align-items: center;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form_style{
+  margin:auto; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(217, 225, 225); */
+  background-image: url("https://www.teahub.io/photos/full/242-2427615_simple-colored-geometric-forms-wallpaper-simple-top-background.jpg");
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /* border-left:50px solid white ;
+  border-right:50px solid white ; */
 }
 
-.App-link {
-  color: #61dafb;
+.form_style > Form { 
+  
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 42px;
+  min-width: 8px;
+  margin-top: 32px;
+  width: 700px;
+  border: 2px ;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px black ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#heading{
+  display: flex;
+  justify-content: center;
+}
+
 }
