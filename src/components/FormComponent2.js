@@ -38,7 +38,7 @@ function FormComponent2() {
         {({errors, isValid, touched, dirty}) =>(
         <Form>
 
-          <h1 id='heading'>Provide All Details</h1>
+          <h1 id='heading'>Provide Fill All Details</h1>
             <Field 
                 name="fullname" 
                 type="text"
